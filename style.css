@@ -1,19 +1,29 @@
 body{
-    font-family: Arial;
-    background-color: #dbeeff;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #cfe8ff;
+}
+
+.contenedor{
+    width: 500px;
+    margin: auto;
 }
 
 h1{
     text-align: center;
-    color: navy;
+    color: #003366;
+    margin-top: 20px;
 }
 
-.contenedor{
-    background-color: white;
-    width: 400px;
-    margin: 20px auto;
+.caja{
+    background: white;
     padding: 20px;
-    border: 1px solid gray;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+h2{
+    color: #004080;
 }
 
 form{
@@ -26,14 +36,22 @@ label{
 }
 
 input, select{
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
 }
 
 button{
     margin-top: 15px;
     padding: 10px;
-    background-color: navy;
+    background: #004080;
     color: white;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #0066cc;
 }
