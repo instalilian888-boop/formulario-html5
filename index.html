@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Actividades HTML5</h1>
+        <p>Formulario de Encuesta de Salud y Validación de Código Postal</p>
+    </header>
+
+    <!-- ACTIVIDAD 1 -->
+    <section class="card">
+        <h2>Actividad 1: Encuesta de Salud</h2>
+
+        <form>
+            <label>Nombre completo:</label>
+            <input type="text" placeholder="Escribe tu nombre" required>
+
+            <label>Edad:</label>
+            <input type="number" min="1" max="120" placeholder="Edad" required>
+
+            <label>Peso (kg):</label>
+            <input type="number" min="20" max="250" placeholder="Peso" required>
+
+            <label>Estatura (cm):</label>
+            <input type="number" min="50" max="250" placeholder="Estatura" required>
+
+            <label>Nivel de dolor:</label>
+            <input type="range" min="0" max="10">
+
+            <label>Tipo de sangre:</label>
+            <select required>
+                <option value="">Selecciona</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+            </select>
+
+            <button type="submit">Enviar Encuesta</button>
+        </form>
+    </section>
+
+    <!-- ACTIVIDAD 2 -->
+    <section class="card">
+        <h2>Actividad 2: Código Postal</h2>
+
+        <form>
+            <label>Código Postal:</label>
+
+            <input 
+                type="text" 
+                pattern="[0-9]{5}" 
+                maxlength="5"
+                placeholder="Ejemplo: 12345"
+                required
+            >
+
+            <small>Debes escribir exactamente 5 números.</small>
+
+            <button type="submit">Validar Código</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Proyecto realizado en HTML5 y CSS3</p>
+    </footer>
+
+</body>
+</html>
