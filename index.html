@@ -8,53 +8,63 @@
 </head>
 <body>
 
-    <h1>Actividades HTML5</h1>
-
-    <!-- Actividad 1 -->
     <div class="contenedor">
-        <h2>Encuesta de Salud</h2>
 
-        <form>
+        <h1>Actividades HTML5</h1>
 
-            <label>Nombre:</label>
-            <input type="text">
+        <!-- Actividad 1 -->
+        <div class="caja">
+            <h2>Encuesta de Salud</h2>
 
-            <label>Edad:</label>
-            <input type="number" min="1" max="100">
+            <form>
 
-            <label>Peso:</label>
-            <input type="number" min="20" max="200">
+                <label>Nombre:</label>
+                <input type="text" placeholder="Escribe tu nombre">
 
-            <label>Nivel de dolor:</label>
-            <input type="range" min="0" max="10">
+                <label>Edad:</label>
+                <input type="number" min="1" max="100">
 
-            <label>Tipo de sangre:</label>
-            <select>
-                <option>A+</option>
-                <option>A-</option>
-                <option>B+</option>
-                <option>O+</option>
-                <option>O-</option>
-            </select>
+                <label>Peso:</label>
+                <input type="number" min="20" max="200">
 
-            <button>Enviar</button>
+                <label>Nivel de dolor:</label>
+                <input type="range" min="0" max="10">
 
-        </form>
-    </div>
+                <label>Tipo de sangre:</label>
+                <select>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
 
-    <!-- Actividad 2 -->
-    <div class="contenedor">
-        <h2>Código Postal</h2>
+                <button type="submit">Enviar</button>
 
-        <form>
+            </form>
+        </div>
 
-            <label>Ingresa tu código postal:</label>
+        <!-- Actividad 2 -->
+        <div class="caja">
+            <h2>Código Postal</h2>
 
-            <input type="text" pattern="[0-9]{5}" placeholder="12345" required>
+            <form>
 
-            <button>Validar</button>
+                <label>Ingresa tu código postal:</label>
 
-        </form>
+                <input 
+                    type="text" 
+                    pattern="[0-9]{5}" 
+                    placeholder="12345"
+                    required
+                >
+
+                <button type="submit">Validar</button>
+
+            </form>
+        </div>
+
     </div>
 
 </body>
